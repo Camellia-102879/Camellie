@@ -24,7 +24,7 @@ def get_ai_response(user_prompt):
 st.title('我的ChatGPT')
 
 if 'messages' not in st.session_state:
-    st.session_state['messages'] = [{'role': 'ai', 'content': '你好主人，我是你的AI助手，我叫小美。'}]
+    st.session_state['messages'] = [{'role': 'ai', 'content': '你好主人，我是你的AI助手，我叫豆老爷。'}]
     st.session_state['memory'] = ConversationBufferMemory(return_messages=True)
 
 for message in st.session_state['messages']:
