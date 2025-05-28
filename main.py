@@ -12,7 +12,7 @@ def get_ai_response(user_prompt):
     try:
         model = ChatOpenAI(
             model='gpt-4o-mini',
-            api_key='hk-qs8d101000055444378649f712c688d8f09a39faa8151aa3'
+            api_key='hk-qs8d101000055444378649f712c688d8f09a39faa8151aa3',
             base_url='https://twapi.openai-hk.com/v1'
         )
         chain = ConversationChain(llm=model, memory=st.session_state['memory'])
